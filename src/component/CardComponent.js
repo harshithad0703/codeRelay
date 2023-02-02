@@ -14,6 +14,23 @@ class CardComponent{
         const cardLink = document.createElement('a');
 
         //Assiging the classes and ID's
+        card.classList.add("card");
+        cardHeader.classList.add("card-header");
+        cardImageDiv.classList.add("card-img");
+        cardContentDiv.classList.add("card-content");
+        cardLink.classList.add("card-link");
+
+        // appendchild 
+
+        card.appendChild(cardHeader);
+        card.appendChild(cardImageDiv);
+        cardImageDiv.appendChild(cardImage);
+        card.appendChild(cardTitle);
+        card.appendChild(cardContentDiv);
+        cardContentDiv.appendChild(cardContent);
+        card.appendChild(cardLink);
+        
+        return card;
 
     }
 }
